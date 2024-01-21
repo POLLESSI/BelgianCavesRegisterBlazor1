@@ -1,0 +1,156 @@
+﻿.navbar-toggler {
+    background-color: rgba(39, 196, 134, 0.1);
+    box-shadow: inherit;
+    text-shadow: inherit;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+.flex-column {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    bottom: 400px
+    right: 0%;
+    left: 20%;
+}
+
+.top-row {
+    height: 3.5rem;
+    background-color: rgba(29, 31, 30, 0.4);
+    text-shadow: inherit;
+    box-shadow: inherit;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+    color: orangered;
+    text-shadow: inherit;
+    box-shadow: inherit;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+.container-fluid {
+    background-color: orange;
+    background-position: left;
+    max-width: 25%;
+    text-align: left;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+.oi {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+    text-shadow: inherit;
+    box-shadow: inherit;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+.nav-item {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+    color: orange;
+    max-width: 10%;
+    text-shadow: inherit;
+    box-shadow: inherit;
+    max-width: 25%;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+    .nav-item:first-of-type {
+        padding-top: 1rem;
+        text-shadow: inherit;
+        box-shadow: inherit;
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .nav-item:last-of-type {
+        padding-bottom: 1rem;
+        text-shadow: inherit;
+        box-shadow: inherit;
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .nav-item ::deep a {
+        color: orange;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+        text-shadow: inherit;
+        box-shadow: inherit;
+    }
+
+.nav-item ::deep a.active {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    /*min-width: 20%;*/
+    max-width: 30%;
+    text-shadow: inherit;
+    box-shadow: inherit;
+}
+
+.nav-item ::deep a:hover {
+    background-color: darkblue;
+    color: white;
+    text-shadow: inherit;
+    box-shadow: inherit;
+}
+ 
+@media (min-width: 641px){
+    .navbar-toggler {
+        display: none;
+        text-shadow: inherit;
+        box-shadow: inherit;
+        position: absolute;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .collapse {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+        text-shadow: inherit;
+        box-shadow: inherit;
+        position: absolute;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+}

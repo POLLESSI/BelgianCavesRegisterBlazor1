@@ -1,0 +1,43 @@
+﻿@page "/nusers/nuserview"
+@using BelgianCavesRegisterBlazor1.Client.Models
+
+<h3>Users View</h3>
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Nickname : </th>
+        <th>Password : </th>
+        <th>Security Stamp</th>
+        <th>Email : </th>
+        <th>Id Person : </th>
+        <th>Id Rôle : </th>
+        <th></th>
+    </tr>
+    @foreach (NUserModel nu in NUsersList)
+    {
+        <tr>
+            <td>@nu.Nickname</td>
+            <td>@nu.Pwd</td>
+            <td>@nu.SecurityStamp</td>
+            <td>@nu.Email</td>
+            <td>@nu.NPerson_Id</td>
+            <td>@nu.Role_Id</td>
+            <td><button class="btn btn-sm btn-outline-success" @onclick="() => ClicInfo(nu.NUser_Id)"></button></td>
+        </tr>
+    }
+</table>
+
+<hr />
+
+@if(SelectedId > 0)
+{
+    <NUserDetail id="SelectedId"></NUserDetail>
+}
+
+<hr />
+
+<NUserCreate></NUserCreate>
+
+@code {
+
+}

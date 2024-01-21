@@ -1,0 +1,18 @@
+﻿@page "/nusers/nuserdetail"
+@using BelgianCavesRegisterBlazor1.Client.Models
+
+<h3>User Details</h3>
+
+<EditForm Model="CurrentNUser" OnSubmit="GetNUser" class="form-control">
+    <div>
+        <label>User Id : </label>
+        <InputNumber @bind-Value="CurrentNUser.NUser_Id"></InputNumber>
+    </div>
+    <div>
+        <button type="submit" button="btn btn-success">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+
+}

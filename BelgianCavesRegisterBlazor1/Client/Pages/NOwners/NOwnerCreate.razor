@@ -1,0 +1,22 @@
+﻿@page "/nowners/nownercreate"
+@using Microsoft.AspNetCore.Components.Forms
+
+<h3>New Owner Creating</h3>
+
+<EditForm Model="nOwnerform" OnSubmit="submit" class="form-control">
+    <div>
+        <label>Status : </label>
+        <InputText @bind-Value="nOwnerform.Status"></InputText>
+    </div>
+    <div>
+        <label>Agreement : </label>
+        <InputText @bind-Value="nOwnerform.Agreement"></InputText>
+    </div>
+    <div>
+        <button type="submit" button="btn btn-success">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+
+}

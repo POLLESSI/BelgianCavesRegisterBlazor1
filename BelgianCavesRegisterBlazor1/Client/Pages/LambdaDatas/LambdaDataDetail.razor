@@ -1,0 +1,18 @@
+﻿@page "/lambdadatas/lambdadatadetail"
+@using BelgianCavesRegisterBlazor1.Client.Models
+
+<h3>LambdaData Detail</h3>
+
+<EditForm Model="CurrentLambdaData" OnSubmit="GetLambdaData" class="form-control">
+    <div class="form-control-sm">
+        <label>Lambda Data Id : </label>
+        <InputNumber @bind-Value="CurrentLambdaData.LambdaData_Id"></InputNumber>
+    </div>
+    <div>
+        <button type="submit" button="btn btn-success">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+
+}

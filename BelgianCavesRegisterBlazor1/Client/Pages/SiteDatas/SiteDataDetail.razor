@@ -1,0 +1,18 @@
+﻿@page "/sitedatas/sitedatadetail"
+@using BelgianCavesRegisterBlazor1.Client.Models
+
+<h3>Site Datas Details</h3>
+
+<EditForm Model="CurrentSiteData" OnSubmit="GetSiteData" class="form-control">
+    <div class="form-control-sm">
+        <label>Id Site : </label>
+        <InputNumber @bind-Value="CurrentSiteData.Site_Id"></InputNumber>
+    </div>
+    <div>
+        <button type="submit" button="btn btn-success">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+
+}

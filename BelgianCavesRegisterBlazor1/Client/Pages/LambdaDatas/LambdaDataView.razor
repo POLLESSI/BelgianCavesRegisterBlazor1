@@ -1,0 +1,34 @@
+﻿@page "/lambdadatas/lambdadataview"
+@using BelgianCavesRegisterBlazor1.Client.Models
+
+<h3>LambdaDatas Repository</h3>
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Localisation</th>
+        <th>Topo</th>
+        <th>Acces</th>
+        <th>EquipementSheet</th>
+        <th>PracticalInformation</th>
+        <th>Description</th>
+        <th></th>
+    </tr>
+    @foreach(LambdaDataModel la in LambdaDataList)
+    {
+        <tr>
+            <td>@la.Localisation</td>
+            <td>@la.Topo</td>
+            <td>@la.Acces</td>
+            <td>@la.EquipementSheet</td>
+            <td>@la.PracticalInformation</td>
+            <td>@la.Description</td>
+            <td><button class="btn-link btn-sm btn-outline-info" @onclick="() => ClickInfo(la.LambdaData_Id)">Info</button></td>
+        </tr>
+    }
+</table>
+
+<LambdaDataCreate></LambdaDataCreate>
+
+@code {
+
+}

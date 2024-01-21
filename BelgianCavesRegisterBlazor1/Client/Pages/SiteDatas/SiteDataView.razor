@@ -1,0 +1,55 @@
+﻿@page "/sitedatas/sitedataview"
+@using BelgianCavesRegisterBlazor1.Client.Models
+
+<h3>Datas Site  View</h3>
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Site name : </th>
+        <th>Site Description : </th>
+        <th>Latitude : </th>
+        <th>Longitude : </th>
+        <th>Length : </th>
+        <th>Depth : </th>
+        <th>Requirement Of Access : </th>
+        <th>Practical Information : </th>
+        <th>Id Lambda datas : </th>
+        <th>Id Owner : </th>
+        <th>Id Scientific Datas : </th>
+        <th>Id Bibliography : </th>
+        <th></th>
+    </tr>
+    @foreach(SiteDataModel si in SiteDatasList)
+    {
+        <tr>
+            <td>@si.Site_Name</td>
+            <td>@si.Site_Description</td>
+            <td>@si.Latitude</td>
+            <td>@si.Longitude</td>
+            <td>@si.Length</td>
+            <td>@si.Depth</td>
+            <td>@si.AccessRequirement</td>
+            <td>@si.PracticalInformation</td>
+            <td>@si.LambdaData_Id</td>
+            <td>@si.NOwner_Id</td>
+            <td>@si.ScientificData_Id</td>
+            <td>@si.Bibliography_Id</td>
+            <td><button class="btn btn-sm btn-outline-success" @onclick="() => ClickInfo(si.Site_Id)">Info</button></td>
+        </tr>
+    }
+</table>
+
+<hr />
+
+@if(SelectedId > 0)
+{
+    <SiteDataDetail id="SelectedId"></SiteDataDetail>
+}
+
+<hr />
+
+<SiteDataCreate></SiteDataCreate>
+
+@code {
+
+}

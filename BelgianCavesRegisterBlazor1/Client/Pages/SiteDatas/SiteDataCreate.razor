@@ -1,0 +1,62 @@
+﻿@page "/sitedatas/sitedatacreate"
+@using Microsoft.AspNetCore.Components.Forms
+
+<h3>Datas Site Creating</h3>
+
+<EditForm Model="siteDataform" OnSubmit="submit" class="form-control">
+    <div>
+        <label>Site Name : </label>
+        <InputText @bind-Value="siteDataform.Site_Name"></InputText>
+    </div>
+    <div>
+        <label>Site Description : </label>
+        <InputText @bind-Value="siteDataform.Site_Description"></InputText>
+    </div>
+    <div>
+        <label>Latitude : </label>
+        <InputNumber @bind-Value="siteDataform.Latitude"></InputNumber>
+    </div>
+    <div>
+        <label>Longitude : </label>
+        <InputNumber @bind-Value="siteDataform.Longitude"></InputNumber>
+    </div>
+    <div>
+        <label>Length : </label>
+        <InputNumber @bind-Value="siteDataform.Length"></InputNumber>
+    </div>
+    <div>
+        <label>Depth : </label>
+        <InputNumber @bind-Value="siteDataform.Depth"></InputNumber>
+    </div>
+    <div>
+        <label>Requirements Of Access : </label>
+        <InputText @bind-Value="siteDataform.AccessRequirement"></InputText>
+    </div>
+    <div>
+        <label>Practical Information : </label>
+        <InputText @bind-Value="siteDataform.PracticalInformation"></InputText>
+    </div>
+    <div>
+        <label>Id Lambda Datas : </label>
+        <InputNumber @bind-Value="siteDataform.LambdaData_Id"></InputNumber>
+    </div>
+    <div>
+        <label>Id Owner : </label>
+        <InputNumber @bind-Value="siteDataform.NOwner_Id"></InputNumber>
+    </div>
+    <div>
+        <label>Id Scientific Datas : </label>
+        <InputNumber @bind-Value="siteDataform.ScientificData_Id"></InputNumber>
+    </div>
+    <div>
+        <label>Id Bibliography : </label>
+        <InputNumber @bind-Value="siteDataform.Bibliography_Id"></InputNumber>
+    </div>
+    <div>
+        <button type="submit" button="btn btn-success">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+
+}
