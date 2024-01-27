@@ -8,7 +8,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.ScientificDatas
     {
         [Inject]
         public HttpClient Client { get; set; }
-        public ScientificDataModel CurrentScientificData { get; set; }
+        public ScientificDataModel? CurrentScientificData { get; set; }
         [Parameter]
         public int ScientificData_Id { get; set; }
 

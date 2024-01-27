@@ -8,7 +8,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Bibliographies
     public partial class BibliographyCreate
     {
         [Inject]
-        public HttpClient? Client { get; set; }
+        public HttpClient Client { get; set; }
         public BibliographyModel? bibliographyform { get; set; }
 
         protected override void OnInitialized()

@@ -8,7 +8,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.NUsers
     {
         [Inject]
         public HttpClient Client { get; set; }
-        public NUserModel CurrentNUser { get; set; }
+        public NUserModel? CurrentNUser { get; set; }
         [Parameter]
         public int NUser_Id { get; set; }
 

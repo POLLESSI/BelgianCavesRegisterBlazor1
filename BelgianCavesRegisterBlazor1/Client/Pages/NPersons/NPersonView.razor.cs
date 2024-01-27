@@ -18,7 +18,7 @@
 //        {
 //            NPersonList = new List<NPersonModel>();
 //            await GetNPerson();
-//            hubConnection = new HubConnectionBuilder().WithUrl(new Uri("https://localhost:7017/npersonhub")).Build();
+//            hubConnection = new HubConnectionBuilder().WithUrl(new Uri("https://localhost:7044/npersonhub")).Build();
 //        }
 
 //        private void ClickInfo(int nPerson_Id)

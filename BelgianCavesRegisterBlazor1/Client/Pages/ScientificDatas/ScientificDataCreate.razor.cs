@@ -8,7 +8,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.ScientificDatas
     public partial class ScientificDataCreate
     {
         [Inject]
-        public HttpClient? Client { get; set; }
+        public HttpClient Client { get; set; }
         public ScientificDataModel? scientificDataform { get; set; }
 
         protected override void OnInitialized()

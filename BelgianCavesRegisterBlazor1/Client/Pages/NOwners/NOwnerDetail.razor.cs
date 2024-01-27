@@ -10,7 +10,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.NOwners
 
         public HttpClient Client { get; set; }
 
-        public NOwnerModel CurrentNOwner { get; set; }
+        public NOwnerModel? CurrentNOwner { get; set; }
 
         [Parameter]
         public int NOwner_Id { get; set; }

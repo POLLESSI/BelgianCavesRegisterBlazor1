@@ -11,15 +11,15 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.ScientificDatas
         [Inject]
 
         public HttpClient Client { get; set; }
-        public HubConnection hubConnection { get; set; }
-        public List<ScientificDataModel> ScientificDatasList { get; set; }
+        public HubConnection? hubConnection { get; set; }
+        public List<ScientificDataModel>? ScientificDatasList { get; set; }
         public int SelectedId { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
             ScientificDatasList = new List<ScientificDataModel>();
             await GetScientificData();
-            hubConnection = new HubConnectionBuilder().WithUrl(new Uri("https://localhost:7017/scientificdatahub")).Build();
+            hubConnection = new HubConnectionBuilder().WithUrl(new Uri("https://localhost:7044/scientificdatahub")).Build();
         }
 
         private void ClickInfo(int scientificData_Id)

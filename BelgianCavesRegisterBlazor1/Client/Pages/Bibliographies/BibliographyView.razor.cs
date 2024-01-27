@@ -11,13 +11,13 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Bibliographies
         [Inject]
         public HttpClient Client { get; set; }
         public HubConnection hubConnection { get; set; }
-        public List<BibliographyModel> BibliographyList { get; set; }
+        public List<BibliographyModel>? BibliographyList { get; set; }
         public int SelectedId { get; set; }
         protected override async Task OnInitializedAsync()
         {
             BibliographyList = new List<BibliographyModel>();
             await GetBibliography();
-            hubConnection = new HubConnectionBuilder().WithUrl(new Uri("https://localhost/bibliographyhub/")).Build();
+            hubConnection = new HubConnectionBuilder().WithUrl(new Uri("https://localhost:7044/bibliographyhub/")).Build();
         }
 
         private void ClickInfo(int bibliography_Id)

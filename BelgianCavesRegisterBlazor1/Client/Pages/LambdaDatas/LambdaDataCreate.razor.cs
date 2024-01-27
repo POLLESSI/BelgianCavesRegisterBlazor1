@@ -9,7 +9,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.LambdaDatas
     {
         [Inject]
 
-        public HttpClient? Client { get; set; }
+        public HttpClient Client { get; set; }
 
         public LambdaDataModel? lambdaDataform { get; set; }
 

@@ -9,7 +9,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.SiteDatas
     {
         [Inject]
         public HttpClient Client { get; set; }
-        public SiteDataModel siteDataform { get; set; }
+        public SiteDataModel? siteDataform { get; set; }
 
         protected override void OnInitialized()
         {

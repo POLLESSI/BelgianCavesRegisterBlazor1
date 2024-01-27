@@ -11,8 +11,8 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.LambdaDatas
         [Inject]
         public HttpClient Client { get; set; }
 
-        public HubConnection hubConnection { get; set; }
-        public List<LambdaDataModel> LambdaDataList { get; set; }
+        public HubConnection? hubConnection { get; set; }
+        public List<LambdaDataModel>? LambdaDataList { get; set; }
 
         public int SelectedId { get; set; }
 
@@ -20,7 +20,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.LambdaDatas
         {
             LambdaDataList = new List<LambdaDataModel>();
             await GetLambdaData();
-            hubConnection = new HubConnectionBuilder().WithUrl(new Uri("https://localhost:7017/lambdadatahub/")).Build();
+            hubConnection = new HubConnectionBuilder().WithUrl(new Uri("https://localhost:7044/lambdadatahub/")).Build();
         }
 
         private void ClickInfo(int lambdaData_Id)
