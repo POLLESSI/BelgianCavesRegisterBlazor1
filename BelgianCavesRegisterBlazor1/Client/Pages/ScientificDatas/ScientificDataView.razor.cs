@@ -13,6 +13,8 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.ScientificDatas
         public HttpClient Client { get; set; }
         public HubConnection? hubConnection { get; set; }
         public List<ScientificDataModel>? ScientificDatasList { get; set; }
+        public object? ValueFromScientificDataDetail { get; set; }
+        public object? ValueFromScientificDataCreate { get; set; }
         public int SelectedId { get; set; }
 
         protected override async Task OnInitializedAsync()
@@ -27,6 +29,15 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.ScientificDatas
             SelectedId = scientificData_Id;
         }
 
+        private void ReceiveEventInvokeDetailScientificData(object value)
+        {
+            ValueFromScientificDataDetail = value;
+        }
+
+        private void ReceiveEventInvokeCreateScientificData(object value)
+        {
+            ValueFromScientificDataCreate = value;
+        }
         private async Task GetScientificData()
         {
             using(HttpResponseMessage message = await Client.GetAsync("scientificdata"))

@@ -3,7 +3,7 @@
 
 <h3>Datas Site Creating</h3>
 
-<EditForm Model="siteDataform" OnSubmit="submit" class="form-control">
+<EditForm Model="siteDataform" @OnSubmit="submit" class="form-control">
     <div>
         <label>Site Name : </label>
         <InputText @bind-Value="siteDataform.Site_Name"></InputText>

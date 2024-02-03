@@ -3,7 +3,7 @@
 
 <h3>Bibliography Detail</h3>
 
-<EditForm Model="CurrentBibliography" OnSubmit="GetBibliography" class="form-control">
+<EditForm Model="CurrentBibliography" @OnSubmit="GetBibliography" class="form-control">
     <div class="form-control-sm">
         <label>Bibliography Id : </label>
         <InputNumber @bind-Value="CurrentBibliography.Bibliography_Id"></InputNumber>

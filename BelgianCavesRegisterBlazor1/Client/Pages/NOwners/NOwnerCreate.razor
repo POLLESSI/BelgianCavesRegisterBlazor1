@@ -3,7 +3,7 @@
 
 <h3>New Owner Creating</h3>
 
-<EditForm Model="nOwnerform" OnSubmit="submit" class="form-control">
+<EditForm Model="nOwnerform" @OnSubmit="submit" class="form-control">
     <div>
         <label>Status : </label>
         <InputText @bind-Value="nOwnerform.Status"></InputText>

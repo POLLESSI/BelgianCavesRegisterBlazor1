@@ -10,6 +10,15 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Bibliographies
         [Inject]
         public HttpClient Client { get; set; }
         public BibliographyModel? bibliographyform { get; set; }
+        [Parameter]
+        public object? ValueFromChild2 { get; set; }
+        [Parameter]
+        public EventCallback<object> EventCreateBibliography { get; set; }
+
+        protected void ExecxuteEventCreateBibliography()
+        {
+            EventCreateBibliography.InvokeAsync(ValueFromChild2);
+        }
 
         protected override void OnInitialized()
         {

@@ -13,6 +13,14 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.LambdaDatas
 
         public LambdaDataModel? lambdaDataform { get; set; }
 
+        [Parameter]
+        public object? ValueFromLambdaDataCreate { get; set; }
+        public EventCallback<object> EventCreateLambdaData { get; set; }
+        protected void ExecuteEventCreateLambdaData()
+        {
+            EventCreateLambdaData.InvokeAsync(ValueFromLambdaDataCreate);
+        }
+
         protected override void OnInitialized()
         {
             lambdaDataform = new LambdaDataModel();

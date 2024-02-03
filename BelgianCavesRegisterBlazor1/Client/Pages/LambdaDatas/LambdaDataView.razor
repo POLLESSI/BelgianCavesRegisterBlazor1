@@ -27,7 +27,20 @@
     }
 </table>
 
-<LambdaDataCreate></LambdaDataCreate>
+<hr />
+
+@if(SelectedId > 0)
+{
+    <LambdaDataDetail id="SelectedId"></LambdaDataDetail>
+}
+
+<hr />
+<hr />
+<hr />
+
+@* <button @onclick="ValueFromLambdaDataCreate">Add Lambda Data</button> *@
+
+@* <LambdaDataCreate></LambdaDataCreate> *@
 
 @code {
 

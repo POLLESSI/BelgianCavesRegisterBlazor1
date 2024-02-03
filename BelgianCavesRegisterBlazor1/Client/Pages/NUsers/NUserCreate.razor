@@ -3,7 +3,7 @@
 
 <h3>New User Creating</h3>
 
-<EditForm Model="nUserform" OnSubmit="submit" class="form-control">
+<EditForm Model="nUserform" @OnSubmit="submit" class="form-control">
     <div class="form-control-sm">
         <label>Nickname : </label>
         <InputText @bind-Value="nUserform.Nickname"></InputText>

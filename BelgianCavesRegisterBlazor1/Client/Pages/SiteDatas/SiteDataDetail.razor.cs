@@ -11,6 +11,15 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.SiteDatas
         public SiteDataModel? CurrentSiteData { get; set; }
         [Parameter]
         public int SiteData_Id { get; set; }
+        [Parameter]
+        public object? ValueFromSiteDataDetail { get; set; }
+        [Parameter]
+        public EventCallback<object> EventDetailSiteData { get; set; }
+
+        protected void ExecuteEventDetailSiteData()
+        {
+            EventDetailSiteData.InvokeAsync(ValueFromSiteDataDetail);
+        }
 
         protected override async Task OnParametersSetAsync()
         {

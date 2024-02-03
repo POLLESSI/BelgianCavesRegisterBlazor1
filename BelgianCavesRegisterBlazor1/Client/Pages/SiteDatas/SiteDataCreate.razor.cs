@@ -10,6 +10,14 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.SiteDatas
         [Inject]
         public HttpClient Client { get; set; }
         public SiteDataModel? siteDataform { get; set; }
+        [Parameter]
+        public object? ValueFromSiteDataCreate { get; set; }
+        [Parameter]
+        public EventCallback<object> EventCreateSiteData { get; set; }
+        protected void ExecuteEventCreateSiteData()
+        {
+            EventCreateSiteData.InvokeAsync(ValueFromSiteDataCreate);
+        }
 
         protected override void OnInitialized()
         {

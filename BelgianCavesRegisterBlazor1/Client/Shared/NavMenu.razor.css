@@ -5,27 +5,29 @@
     position: absolute;
     top: 100px;
     bottom: auto;
-    left: 40%;
-    right: auto;
+    left: auto;
+    right: 90%;
 }
 
 nav {
     display: flex;
+    background-color: chocolate;
     position: absolute;
     top: 300px;
     bottom: 5000px;
-    left: 40%;
-    right: auto;
+    left: auto;
+    right: 80%;
     background-color: blue;
 }
 
 .flex-column {
+    background-color: blueviolet;
     display: flex;
     position: relative;
     top: auto;
     bottom: auto;
-    right: 0%;
-    left: 20%;
+    right: 80%;
+    left: auto;
     margin-left: 0%;
 }
 
@@ -37,8 +39,8 @@ nav {
     position: absolute;
     top: 50px;
     bottom: auto;
-    left: 15%;
-    right: auto;
+    left: auto;
+    right: 80%;
 }
 
 .navbar-brand {
@@ -49,8 +51,9 @@ nav {
     position: absolute;
     top: 100px;
     bottom: 2000px;
-    left: 30%;
-    right: auto;
+    left: auto;
+    right: 80%;
+    /*margin-left: auto;*/
 }
 .container-fluid {
     background-color: orange;
@@ -60,24 +63,24 @@ nav {
     position: absolute;
     top: auto;
     bottom: auto;
-    left: 50%;
-    right: 50%;
+    left: auto;
+    right: 80%;
 }
 .container-fluid a {
     background-color: orange;
     position: relative;
     top: auto;
     bottom: auto;
-    left: 50%;
-    right: auto;
+    left: auto;
+    right: 80%;
 }
 
 .container-fluid button {
     position: absolute;
     top: auto;
     bottom: auto;
-    left: 50%;
-    right: auto;
+    left: auto;
+    right: 80%;
 }
 
 .container-fluid button span {
@@ -85,8 +88,8 @@ nav {
     position: absolute;
     top: auto;
     bottom: auto;
-    left: 60%;
-    right: auto;
+    left: auto;
+    right: 80%;
 }
 
 .oi {
@@ -99,8 +102,8 @@ nav {
     position: absolute;
     top: 100px;
     bottom: auto;
-    left: 40%S;
-    right: auto;
+    left: auto;
+    right: 90%;
 }
 
 .nav-item {
@@ -115,8 +118,8 @@ nav {
     position: relative;
     top: 100px;
     bottom: 100px;
-    left: 30%;
-    right: auto;
+    left: auto;
+    right: 90%;
     padding: 10px;
 }
     .nav-item:first-of-type {
@@ -126,8 +129,8 @@ nav {
         position: relative;
         top: 10px;
         bottom: auto;
-        left: 10%;
-        right: auto;
+        left: auto;
+        right: 80%;
     }
 
     .nav-item:last-of-type {
@@ -138,7 +141,7 @@ nav {
         top: auto;
         bottom: auto;
         left: auto;
-        right: auto;
+        right: 80%;
     }
 
     .nav-item ::deep a {
@@ -148,8 +151,8 @@ nav {
         display: flex;
         align-items: center;
         line-height: 3rem;
-        text-shadow: inherit;
-        box-shadow: inherit;
+        /*text-shadow: inherit;
+        box-shadow: inherit;*/
     }
 
 .nav-item ::deep a.active {
@@ -171,24 +174,24 @@ nav {
 @media (min-width: 641px){
     .navbar-toggler {
         display: none;
-        text-shadow: inherit;
+        /*text-shadow: inherit;
         box-shadow: inherit;
         position: absolute;
         top: auto;
         bottom: auto;
         left: auto;
-        right: auto;
+        right: auto;*/
     }
 
     .collapse {
         /* Never collapse the sidebar for wide screens */
         display: block;
-        text-shadow: inherit;
+        /*text-shadow: inherit;
         box-shadow: inherit;
         position: absolute;
         top: auto;
         bottom: auto;
         left: auto;
-        right: auto;
+        right: auto;*/
     }
 }

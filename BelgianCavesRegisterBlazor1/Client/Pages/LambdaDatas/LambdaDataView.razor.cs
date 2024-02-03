@@ -11,8 +11,10 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.LambdaDatas
         [Inject]
         public HttpClient Client { get; set; }
 
-        public HubConnection? hubConnection { get; set; }
+        public HubConnection hubConnection { get; set; }
         public List<LambdaDataModel>? LambdaDataList { get; set; }
+        public object? ValueFromLambdadataDetail { get; set; }
+        public object? ValueFromLambdaDataCreate { get; set; }
 
         public int SelectedId { get; set; }
 
@@ -26,6 +28,16 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.LambdaDatas
         private void ClickInfo(int lambdaData_Id)
         {
             SelectedId = lambdaData_Id;
+        }
+
+        private void ReceiveEventInvokeDetailLambdaData(object value)
+        {
+            ValueFromLambdadataDetail = value;
+        }
+
+        private void ReceiveEventInvokeCreateLambdaData(object value)
+        {
+            ValueFromLambdaDataCreate = value;
         }
 
         private async Task GetLambdaData()

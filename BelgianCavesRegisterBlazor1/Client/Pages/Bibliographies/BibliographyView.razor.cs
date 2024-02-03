@@ -12,6 +12,8 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Bibliographies
         public HttpClient Client { get; set; }
         public HubConnection hubConnection { get; set; }
         public List<BibliographyModel>? BibliographyList { get; set; }
+        public object? ValueFromChild1 { get; set; }
+        public object? ValueFromChild2 { get; set; }
         public int SelectedId { get; set; }
         protected override async Task OnInitializedAsync()
         {
@@ -23,6 +25,14 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Bibliographies
         private void ClickInfo(int bibliography_Id)
         {
             SelectedId = bibliography_Id;
+        }
+        private void ReceiveEventInvoke1(object value)
+        {
+            ValueFromChild1 = value;
+        }
+        private void ReceiveEventInvoke2(object value)
+        {
+            ValueFromChild2 = value;
         }
         private async Task GetBibliography()
         {

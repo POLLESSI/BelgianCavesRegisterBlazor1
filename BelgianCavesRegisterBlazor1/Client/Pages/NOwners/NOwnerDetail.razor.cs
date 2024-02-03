@@ -14,6 +14,15 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.NOwners
 
         [Parameter]
         public int NOwner_Id { get; set; }
+        [Parameter]
+        public object? ValueFromNOwnerDetail { get; set; }
+        [Parameter]
+        public EventCallback<object> EventDetailNOwner { get; set; }
+
+        protected void ExecuteEventDetailNOwner()
+        {
+            EventDetailNOwner.InvokeAsync(ValueFromNOwnerDetail);
+        }
 
         protected override async Task OnParametersSetAsync()
         {

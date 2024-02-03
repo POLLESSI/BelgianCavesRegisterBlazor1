@@ -11,6 +11,18 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.ScientificDatas
         public HttpClient Client { get; set; }
         public ScientificDataModel? scientificDataform { get; set; }
 
+        [Parameter]
+        public object? ValueFromScientificDataCreate { get; set; }
+
+        [Parameter]
+
+        public EventCallback<object> EventCreateScientificData { get; set; }
+
+        protected void ExecuteEventCreateScientificData()
+        {
+            EventCreateScientificData.InvokeAsync(ValueFromScientificDataCreate);
+        }
+
         protected override void OnInitialized()
         {
             scientificDataform = new ScientificDataModel();

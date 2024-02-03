@@ -10,6 +10,10 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.NOwners
         [Inject]
         public HttpClient Client { get; set; }
         public NOwnerModel? nOwnerform { get; set; }
+        public object? ValueFromNOwnerCreate { get; set; }
+        [Parameter]
+
+        public EventCallback<object> EventCreateNOwner { get; set; }
 
         protected override void OnInitialized()
         {

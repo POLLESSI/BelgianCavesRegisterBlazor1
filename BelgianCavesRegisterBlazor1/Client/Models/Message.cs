@@ -7,9 +7,9 @@ namespace BelgianCavesRegisterBlazor1.Client.Models
     {
         [Required]
         [DisplayName("Message")]
-        public string Content { get; set; }
+        public string? Content { get; set; }
         [Required]
         [DisplayName("Author")]
-        public string Author { get; set; }
+        public string? Author { get; set; }
     }
 }

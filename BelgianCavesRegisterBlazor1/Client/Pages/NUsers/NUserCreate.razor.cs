@@ -10,6 +10,15 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.NUsers
         [Inject]
         public HttpClient Client { get; set; }
         public NUserModel? nUserform { get; set; }
+        [Parameter]
+        public object? ValueFromNUserCreate { get; set; }
+        [Parameter]
+        public EventCallback<object>EventCreateNUser { get; set; }
+
+        protected void ExecuteEventCreateNUser()
+        {
+            EventCreateNUser.InvokeAsync(ValueFromNUserCreate);
+        }
 
         protected override void OnInitialized()
         {

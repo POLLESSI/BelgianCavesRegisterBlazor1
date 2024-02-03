@@ -3,7 +3,7 @@
 
 <h3>Scientific Datas Details</h3>
 
-<EditForm Model="CurrentScientificData" OnSubmit="GetScientificData" class="form-control">
+<EditForm Model="CurrentScientificData" @OnSubmit="GetScientificData" class="form-control">
     <div class="form-control-sm">
         <label>Scientific Datas Id : </label>
         <InputNumber @bind-Value="CurrentScientificData.ScientificData_Id"></InputNumber>

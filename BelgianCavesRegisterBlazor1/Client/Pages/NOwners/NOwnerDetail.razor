@@ -3,7 +3,7 @@
 
 <h3>Owner Detail</h3>
 
-<EditForm Model="CurrentNOwner" OnSubmit="GetNOwner" class="form-control">
+<EditForm Model="CurrentNOwner" @OnSubmit="GetNOwner" class="form-control">
     <div class="form-control-sm">
         <label>Owner Id : </label>
         <InputNumber @bind-Value="CurrentNOwner.NOwner_Id"></InputNumber>

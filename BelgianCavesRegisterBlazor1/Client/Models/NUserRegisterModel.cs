@@ -13,7 +13,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Models
         [EmailAddress]
         [MaxLength(64)]
         [DisplayName("Email ? ")]
-        public string Email { get; set; }
+        public string? Email { get; set; }
         [Required(ErrorMessage = "The password is required ! ")]
         [MaxLength(64)]
         [DisplayName("Password ? ")]
