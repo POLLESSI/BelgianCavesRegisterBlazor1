@@ -11,16 +11,6 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.NUsers
         public NUserModel? CurrentNUser { get; set; }
         [Parameter]
         public Guid NUser_Id { get; set; }
-        //[Parameter]
-        //public object? ValueFromNUserDetail { get; set; }
-        //[Parameter]
-        //public EventCallback<object> EventDetailNUser { get; set; }
-
-        //protected void ExecuteEventCreateNUser()
-        //{
-        //    EventDetailNUser.InvokeAsync(ValueFromNUserDetail);
-        //}
-
         protected override async Task OnParametersSetAsync()
         {
             await GetNUser();

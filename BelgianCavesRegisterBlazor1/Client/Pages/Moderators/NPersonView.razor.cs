@@ -12,8 +12,6 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Moderators
         public HttpClient Client { get; set; }
         public HubConnection hubConnection { get; set; }
         public List<NPersonModel>? NPersonsList { get; set; }
-        //public object? ValueFromNPersonDetail { get; set; }
-        //public object? ValueFromNPersonCreate { get; set; }
         public int SelectedId { get; set; }
 
         protected override async Task OnInitializedAsync()
@@ -26,15 +24,6 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Moderators
         {
             SelectedId = nPerson_Id;
         }
-        //private void ReceiveEventInvokeNPersonDetail(object value)
-        //{
-        //    ValueFromNPersonDetail = value;
-        //}
-        //private void ReceiveEventInvokeNPersonCreate(object value)
-        //{
-        //    ValueFromNPersonCreate = value;
-        //}
-
         private async Task GetNPerson()
         {
             using (HttpResponseMessage message = await Client.GetAsync("nperson"))

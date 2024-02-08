@@ -6,11 +6,11 @@
 <EditForm Model="nUserform" @OnSubmit="submit" class="form-control">
     <div class="form-control-sm">
         <label>Nickname : </label>
-        <InputText @bind-Value="nUserform.Nickname"></InputText>
+        <InputText @bind-Value="nUserform.Pseudo"></InputText>
     </div>
     <div class="form-control-sm">
         <label>Password : </label>
-        <InputNumber @bind-Value="nUserform.Pwd"></InputNumber>
+        <InputNumber @bind-Value="nUserform.PasswordHash"></InputNumber>
     </div>
     <div class="form-control-sm">
         <label>Security Stamp : </label>

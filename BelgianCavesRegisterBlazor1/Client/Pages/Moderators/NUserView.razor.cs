@@ -12,8 +12,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Moderators
         public HttpClient Client { get; set; }
         public HubConnection? hubConnection { get; set; }
         public List<NUserModel>? NUsersList { get; set; }
-        //public object? ValueFromNUserDetail { get; set; }
-        //public object? ValueFromNUserCreate { get; set; }
+        
         public Guid? SelectedId { get; set; }
 
         protected override async Task OnInitializedAsync()
@@ -27,15 +26,6 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Moderators
         {
             SelectedId = nUser_Id;
         }
-
-        //private void ReceiveEventInvokeDetailNUser(object value)
-        //{
-        //    ValueFromNUserDetail = value;
-        //}
-        //private void ReceiveEventInvokeCreateNUser(object value)
-        //{
-        //    ValueFromNUserCreate = value;
-        ////}
 
         private async Task GetNUser()
         {

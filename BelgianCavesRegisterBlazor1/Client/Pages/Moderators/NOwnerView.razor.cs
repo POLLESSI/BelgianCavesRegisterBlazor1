@@ -12,8 +12,6 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Moderators
         public HttpClient Client { get; set; }
         public HubConnection? hubConnection { get; set; }
         public List<NOwnerModel>? NOwnerList { get; set; }
-        //public object? ValueFromNOwnerDetail { get; set; }
-        //public object? ValueFromNOwnerCreate { get; set; }
 
         public int SelectedId { get; set; }
 
@@ -29,14 +27,6 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Moderators
             SelectedId = nowner_Id;
         }
 
-        //private void ReceiveEventInvokeDetailNOwner(object value)
-        //{
-        //    ValueFromNOwnerDetail = value;
-        //}
-        //private void ReceiveEventInvokeCreateNOwner(object value)
-        //{
-        //    ValueFromNOwnerCreate = value;
-        //}
         private async Task GetNOwner()
         {
             using (HttpResponseMessage message = await Client.GetAsync("nowner"))
