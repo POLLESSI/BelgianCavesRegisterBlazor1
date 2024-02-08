@@ -1,6 +1,6 @@
 ﻿ .page {
     position: relative;
-    /*left: 20%;*/
+    left: 20%;
     display: flex;
     flex-direction: row; 
     background-image: url();
@@ -10,11 +10,11 @@
 h3 {
     color: orangered;
     background-color: lightseagreen;
-    /*position: absolute;
+    position: absolute;
     top: auto;
     bottom: auto;
     left: auto;
-    right: auto;*/
+    right: auto;
 }
 
 main {
@@ -24,14 +24,14 @@ main {
 .sidebar {
     background-image: linear-gradient(180deg, rgb(8, 22, 48) 0%, #3a0647 70%);
     background-color: orange;
-    /*position: static;
+    position: static;
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 100px;
     bottom: 2000px;
     left: 30%;
-    right: 50%;*/
+    right: 50%;
 }
 
 .top-row {
@@ -41,11 +41,11 @@ main {
     height: 3.5rem;
     display: flex;
     align-items: center;
-    /*position: absolute;
+    position: absolute;
     top: auto;
     bottom: auto;
-    left: auto;
-    right: auto;*/
+    left: 10%;
+    right: auto;
 }
 
     .top-row ::deep a, .top-row ::deep .btn-link {
@@ -125,10 +125,10 @@ main {
         .top-row, article {
             padding-left: 2rem !important;
             padding-right: 1.5rem !important;
-            /*position: absolute;
+            position: absolute;
             top: auto;
             bottom: auto;
             left: 20%;
-            right: auto;*/
+            right: auto;
         }
     }

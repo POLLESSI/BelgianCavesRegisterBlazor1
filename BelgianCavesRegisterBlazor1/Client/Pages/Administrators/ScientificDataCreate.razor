@@ -1,0 +1,26 @@
+﻿@page "/administrators/scientificdatacreate"
+@using Microsoft.AspNetCore.Components.Forms;
+
+<h3>Scientific Datas Creating</h3>
+
+<EditForm Model="scientificDataform" @OnSubmit="submit" class="form-control">
+    <div>
+        <label>Data Type : </label>
+        <InputText @bind-Value="scientificDataform.DataType"></InputText>
+    </div>
+    <div>
+        <label>Details : </label>
+        <InputText @bind-Value="scientificDataform.DetailsData"></InputText>
+    </div>
+    <div>
+        <label>Reference Datas : </label>
+        <InputText @bind-Value="scientificDataform.ReferenceData"></InputText>
+    </div>
+    <div>
+        <button type="submit" button="btn btn-success">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+
+}

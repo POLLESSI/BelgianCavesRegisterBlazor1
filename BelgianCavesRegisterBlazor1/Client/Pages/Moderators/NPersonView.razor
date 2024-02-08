@@ -1,0 +1,52 @@
+﻿@page "/moderators/npersonview"
+@using BelgianCavesRegisterBlazor1.Client.Models
+
+<h3>Persons View</h3>
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Lastname : </th>
+        <th>Firstname : </th>
+        <th>BirthDate : </th>
+        <th>Email : </th>
+        <th>Street : </th>
+        <th>N° : </th>
+        <th>Postal Code : </th>
+        <th>City : </th>
+        <th>Country : </th>
+        <th>Gsm : </th>
+        <th>Telephone : </th>
+        <th></th>
+    </tr>
+    @foreach (NPersonModel ne in NPersonsList)
+    {
+        <tr>
+            <td>@ne.Lastname</td>
+            <td>@ne.Firstname</td>
+            <td>@ne.BirthDate</td>
+            <td>@ne.Email</td>
+            <td>@ne.Address_Street</td>
+            <td>@ne.Address_Nbr</td>
+            <td>@ne.PostalCode</td>
+            <td>@ne.Address_City</td>
+            <td>@ne.Address_Country</td>
+            <td>@ne.Gsm</td>
+            <td>@ne.Telephone</td>
+            <td><button class="btn btn-sm btn-outline-info" @onclick="() => ClickInfo(ne.NPerson_Id)">Info</button></td>
+        </tr>
+    }
+</table>
+
+<hr />
+<hr />
+<hr />
+@if(SelectedId > 0)
+{
+    <NPersonDetail id="SelectedId"></NPersonDetail>
+}
+
+<hr />
+
+@code {
+
+}

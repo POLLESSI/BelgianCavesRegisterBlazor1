@@ -1,0 +1,55 @@
+﻿@page "/administrators/npersoncreate"
+@using Microsoft.AspNetCore.Components.Forms
+
+<h3>New Person Creating</h3>
+
+<EditForm Model="nPersonform" OnSubmit="submit" class="form-control">
+        <div class="form-control-sm">
+            <label>Lastname : </label>
+            <InputText @bind-Value="nPersonform.Lastname"></InputText>
+        </div>
+        <div class="form-control-sm">
+            <label>Firstname : </label>
+            <InputText @bind-Value="nPersonform.Firstname"></InputText>
+        </div>
+        <div class="form-control-sm">
+            <label>BirthDate : </label>
+            <InputText @bind-Value="nPersonform.BirthDate"></InputText>
+        </div>
+    <div class="form-control-sm">
+        <label>Email : </label>
+        <InputText @bind-Value="nPersonform.Email"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Street : </label>
+        <InputText @bind-Value="nPersonform.Address_Street"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>N° : </label>
+        <InputText @bind-Value="nPersonform.Address_Nbr"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Postal Code : </label>
+        <InputText @bind-Value="nPersonform.PostalCode"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>City : </label>
+        <InputText @bind-Value="nPersonform.Address_City"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Country : </label>
+        <InputText @bind-Value="nPersonform.Address_Country"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Gsm : </label>
+        <InputText @bind-Value="nPersonform.Gsm"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Telephone : </label>
+        <InputText @bind-Value="nPersonform.Telephone"></InputText>
+    </div>
+</EditForm>
+
+@code {
+
+}

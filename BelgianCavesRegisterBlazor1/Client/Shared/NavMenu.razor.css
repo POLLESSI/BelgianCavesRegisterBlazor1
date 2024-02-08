@@ -6,7 +6,7 @@
     top: 100px;
     bottom: auto;
     left: auto;
-    right: 90%;
+    right: 200px;
 }
 
 nav {
@@ -16,7 +16,7 @@ nav {
     top: 300px;
     bottom: 5000px;
     left: auto;
-    right: 80%;
+    right: 200px;
     background-color: blue;
 }
 
@@ -26,7 +26,7 @@ nav {
     position: relative;
     top: auto;
     bottom: auto;
-    right: 80%;
+    right: 200px;
     left: auto;
     margin-left: 0%;
 }
@@ -40,7 +40,7 @@ nav {
     top: 50px;
     bottom: auto;
     left: auto;
-    right: 80%;
+    right: 200px;
 }
 
 .navbar-brand {
@@ -52,7 +52,7 @@ nav {
     top: 100px;
     bottom: 2000px;
     left: auto;
-    right: 80%;
+    right: 200px;
     /*margin-left: auto;*/
 }
 .container-fluid {
@@ -64,7 +64,7 @@ nav {
     top: auto;
     bottom: auto;
     left: auto;
-    right: 80%;
+    right: 200px;
 }
 .container-fluid a {
     background-color: orange;
@@ -72,7 +72,7 @@ nav {
     top: auto;
     bottom: auto;
     left: auto;
-    right: 80%;
+    right: 200px;
 }
 
 .container-fluid button {
@@ -80,7 +80,7 @@ nav {
     top: auto;
     bottom: auto;
     left: auto;
-    right: 80%;
+    right: 200px;
 }
 
 .container-fluid button span {
@@ -89,7 +89,7 @@ nav {
     top: auto;
     bottom: auto;
     left: auto;
-    right: 80%;
+    right: 200px;
 }
 
 .oi {
@@ -103,7 +103,7 @@ nav {
     top: 100px;
     bottom: auto;
     left: auto;
-    right: 90%;
+    right: 200px;
 }
 
 .nav-item {
@@ -119,7 +119,7 @@ nav {
     top: 100px;
     bottom: 100px;
     left: auto;
-    right: 90%;
+    right: 200px;
     padding: 10px;
 }
     .nav-item:first-of-type {
@@ -130,7 +130,7 @@ nav {
         top: 10px;
         bottom: auto;
         left: auto;
-        right: 80%;
+        right: 175px;
     }
 
     .nav-item:last-of-type {
@@ -141,7 +141,7 @@ nav {
         top: auto;
         bottom: auto;
         left: auto;
-        right: 80%;
+        right: 225px;
     }
 
     .nav-item ::deep a {

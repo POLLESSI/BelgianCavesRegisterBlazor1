@@ -13,14 +13,14 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.ScientificDatas
         public int ScientificData_Id { get; set; }
 
         [Parameter]
-        public object? ValueFromScientificDataDetail { get; set; }
-        [Parameter]
-        public EventCallback<object> EventDetailScientificData { get; set; }
+        //public object? ValueFromScientificDataDetail { get; set; }
+        //[Parameter]
+        //public EventCallback<object> EventDetailScientificData { get; set; }
 
-        protected void ExecuteEventDetailScientificData()
-        {
-            EventDetailScientificData.InvokeAsync(ValueFromScientificDataDetail);
-        }
+        //protected void ExecuteEventDetailScientificData()
+        //{
+        //    EventDetailScientificData.InvokeAsync(ValueFromScientificDataDetail);
+        //}
 
         protected override async Task OnParametersSetAsync()
         {

@@ -50,10 +50,48 @@
 <hr />
 <hr />
 
-@* <button @onclick="ValueFromSiteDataCreate">Add Site</button> *@
+<div class="@NavMenuSiteDataViewCssClass" onclick="ToggleNavMenuSiteDataView">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span>All Belgian's Cavities
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="bibliographies/bibliographyview">
+                <span class="oi oi-flag" aria-hidden="true"></span> Bibliographies
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="lambdadatas/lambdadataview">
+                <span class="oi oi-flag" aria-hidden="true"></span> LambdaDatas
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="nowners/nownerview">
+                <span class="oi oi-flag" aria-hidden="true"></span> Owners
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="npersons/npersondetail">
+                <span class="oi oi-user" aria-hidden="true"></span> Register Persons
+            </NavLink>
+        </div>
 
-@* <SiteDataCreate></SiteDataCreate> *@
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="scientificdatas/scientificdataview">
+                <span class="oi oi-flag" aria-hidden="true"></span> Scientific Datas
+            </NavLink>
+        </div>
+    </nav>
+</div>
 
 @code {
+    private bool collapseNavMenu = true;
+    private string? NavMenuSiteDataViewCssClass => collapseNavMenu ? "collapse" : null;
 
+    private void ToggleNavMenuSiteDataView()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
 }

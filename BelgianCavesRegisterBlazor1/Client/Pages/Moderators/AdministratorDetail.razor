@@ -1,0 +1,18 @@
+﻿@page "/moderators/administratordetail"
+@using BelgianCavesRegisterBlazor1.Client.Models
+
+<h3>Administrator Details</h3>
+
+<EditForm Model="CurrentAdministrator" @OnSubmit="GetAdministrator" class="form-control">
+    <div class="form-control-sm">
+        <label>Id User : </label>
+        <InputNumber @bind-Value="CurrentAdministrator.Administrator_Id"></InputNumber>
+    </div>
+    <div>
+        <button type="submit" button="btn btn-success">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+
+}
