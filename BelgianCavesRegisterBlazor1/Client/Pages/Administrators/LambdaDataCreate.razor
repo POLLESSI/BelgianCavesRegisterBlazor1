@@ -1,5 +1,7 @@
 ﻿@page "/administrators/lambdadatacreate"
 @using Microsoft.AspNetCore.Components.Forms
+@inject NavigationManager NavigationManager
+
 <h3>Lambda Data Creating</h3>
 
 <EditForm Model="lambdaDataform" @OnSubmit="submit" class="form-control">

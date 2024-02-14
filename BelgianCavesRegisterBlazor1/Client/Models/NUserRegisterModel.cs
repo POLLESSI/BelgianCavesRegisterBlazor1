@@ -22,6 +22,12 @@ namespace BelgianCavesRegisterBlazor1.Client.Models
         [Compare("Pwd")]
         [DisplayName("Second Password ? ")]
         public string? SecondPassword { get; set; }
+        [Required(ErrorMessage = "Id Person is required ! ")]
+        [DisplayName("Id Person ? ")]
+        public int NPerspn_Id { get; set; }
+        [Required(ErrorMessage = "Id Rôle is required ! ")]
+        [DisplayName("Id Rôle ? ")]
+        public int Role_Id { get; set; }
         public bool Active { get; } = true;
     }
 }

@@ -1,5 +1,7 @@
 ﻿@page "/administrators/bibliographycreate"
 @using Microsoft.AspNetCore.Components.Forms
+@inject NavigationManager NavigationManager
+
 <h3>Bibliography Creating</h3>
 
 <EditForm Model="bibliographyform" @OnSubmit="submit" class="form-control">

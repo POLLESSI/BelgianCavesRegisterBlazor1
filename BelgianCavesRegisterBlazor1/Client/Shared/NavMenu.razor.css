@@ -5,8 +5,8 @@
     position: absolute;
     top: 100px;
     bottom: auto;
-    left: auto;
-    right: 200px;
+    left: 100px;
+    right: auto;
 }
 
 nav {
@@ -15,8 +15,8 @@ nav {
     position: absolute;
     top: 300px;
     bottom: 5000px;
-    left: auto;
-    right: 200px;
+    left: 100px;
+    right: auto;
     background-color: blue;
 }
 
@@ -26,8 +26,8 @@ nav {
     position: relative;
     top: auto;
     bottom: auto;
-    right: 200px;
-    left: auto;
+    right: auto;
+    left: 100px;
     margin-left: 0%;
 }
 
@@ -39,8 +39,8 @@ nav {
     position: absolute;
     top: 50px;
     bottom: auto;
-    left: auto;
-    right: 200px;
+    left: 100px;
+    right: auto;
 }
 
 .navbar-brand {
@@ -49,10 +49,10 @@ nav {
     text-shadow: inherit;
     box-shadow: inherit;
     position: absolute;
-    top: 100px;
+    top: 150px;
     bottom: 2000px;
-    left: auto;
-    right: 200px;
+    left: 100px;
+    right: auto;
     /*margin-left: auto;*/
 }
 .container-fluid {
@@ -63,34 +63,34 @@ nav {
     position: absolute;
     top: auto;
     bottom: auto;
-    left: auto;
-    right: 200px;
+    left: 100px;
+    right: auto;
 }
-.container-fluid a {
-    background-color: orange;
-    position: relative;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: 200px;
-}
+    .container-fluid a {
+        background-color: orange;
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: 100px;
+        right: auto;
+    }
 
-.container-fluid button {
-    position: absolute;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: 200px;
-}
+    .container-fluid button {
+        position: absolute;
+        top: auto;
+        bottom: auto;
+        left: 100px;
+        right: auto;
+    }
 
-.container-fluid button span {
-    background-color: yellow;
-    position: absolute;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: 200px;
-}
+        .container-fluid button span {
+            background-color: yellow;
+            position: absolute;
+            top: auto;
+            bottom: auto;
+            left: 100px;
+            right: auto;
+        }
 
 .oi {
     width: 2rem;
@@ -100,10 +100,10 @@ nav {
     text-shadow: inherit;
     box-shadow: inherit;
     position: absolute;
-    top: 100px;
+    top: 75px;
     bottom: auto;
-    left: auto;
-    right: 200px;
+    left: 100px;
+    right: auto;
 }
 
 .nav-item {
@@ -116,10 +116,10 @@ nav {
     box-shadow: inherit;
     max-width: 35%;
     position: relative;
-    top: 100px;
+    top: 125px;
     bottom: 100px;
-    left: auto;
-    right: 200px;
+    left: 100px;
+    right: auto;
     padding: 10px;
 }
     .nav-item:first-of-type {
@@ -129,8 +129,8 @@ nav {
         position: relative;
         top: 10px;
         bottom: auto;
-        left: auto;
-        right: 175px;
+        left: 75px;
+        right: auto;
     }
 
     .nav-item:last-of-type {
@@ -139,9 +139,9 @@ nav {
         box-shadow: inherit;
         position: relative;
         top: auto;
-        bottom: auto;
-        left: auto;
-        right: 225px;
+        bottom: 300px;
+        left: 25px;
+        right: auto;
     }
 
     .nav-item ::deep a {

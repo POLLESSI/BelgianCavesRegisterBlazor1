@@ -1,5 +1,6 @@
 ﻿@page "/nusers/nuserregister"
 @using Microsoft.AspNetCore.Components.Forms
+@inject NavigationManager NavigationManager
 
 <h3>New User Register</h3>
 
@@ -21,10 +22,10 @@
         <InputText @bind-Value="nuserregisterform.SecondPassword"></InputText>
     </div>
     <div>
-        <button type="submit" button="btn btn-success">Submit</button>
+        <button type="submit" button="btn btn-success" >Submit</button>
     </div>
 </EditForm>
-
+    <a href="@nPersonRegisterPageLink">Go tu user registration page</a>
 @code {
 
 }

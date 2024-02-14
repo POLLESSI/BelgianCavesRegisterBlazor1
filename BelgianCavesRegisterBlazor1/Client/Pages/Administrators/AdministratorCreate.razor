@@ -1,5 +1,7 @@
 ﻿@page "/administrators/administratorcreate"
 @using Microsoft.AspNetCore.Components.Forms
+@inject NavigationManager NavigationManager
+
 <h3>Create new Administrator</h3>
 
 <EditForm Model="administratorform" @OnSubmit="submit" class="form-control">

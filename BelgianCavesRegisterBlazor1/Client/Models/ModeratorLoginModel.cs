@@ -9,7 +9,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Models
         [MinLength(4)]
         [MaxLength(64)]
         [DisplayName("Nick Name : ")]
-        public string Nickname { get; set; }
+        public string? Pseudo { get; set; }
         [Required]
         [MinLength(8)]
         [MaxLength(64)]
