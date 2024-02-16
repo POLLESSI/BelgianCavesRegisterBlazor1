@@ -19,6 +19,12 @@ h3 {
 
 main {
     flex: 1;
+    background-color: aqua;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 20%;
+    right: auto;
 }
 
 .sidebar {

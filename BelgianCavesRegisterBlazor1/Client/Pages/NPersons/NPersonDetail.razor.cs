@@ -12,13 +12,6 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.NPersons
         public NPersonModel? CurrentNPerson { get; set; }
         [Parameter]
         public int NPerson_Id { get; set; }
-        //[Parameter]
-        //public object? ValueFromNPersonDetail { get; set; }
-        //public EventCallback<object> EventDetailNPerson { get; set; }
-        //protected void ExecuteEventDetailNPerson()
-        //{
-        //    EventDetailNPerson.InvokeAsync(ValueFromNPersonDetail);
-        //}
         protected override async Task OnParametersSetAsync()
         {
             await GetNPerson();

@@ -12,8 +12,6 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.SiteDatas
         public HttpClient Client { get; set; }
         public HubConnection? hubConnection { get; set; }
         public List<SiteDataModel>? SiteDatasList { get; set; }
-        //public object? ValueFromSiteDataDetail { get; set; }
-        //public object? ValueFromSiteDataCreate { get; set; }
         public int SelectedId { get; set; }
 
         protected override async Task OnInitializedAsync()
@@ -27,17 +25,6 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.SiteDatas
         {
             SelectedId = siteData_Id;
         }
-
-        //private void ReceiveEventInvokeDetailSiteData(object value)
-        //{
-        //    ValueFromSiteDataDetail = value;
-        //}
-
-        //private void ReceiveEventInvokeCreateSiteData(object value)
-        //{
-        //    ValueFromSiteDataCreate = value;
-        //}
-
         private async Task GetSiteData()
         {
             using(HttpResponseMessage message = await Client.GetAsync("sitedata"))

@@ -15,16 +15,6 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.LambdaDatas
         [Parameter]
         public int LambdaData_Id { get; set; }
 
-        //[Parameter]
-        //public object? ValueFromLambdaDataDetail { get; set; }
-
-        //public EventCallback<object> EventDetailLambdaData {  get; set; }
-
-        //protected void ExecuteEventDetailambdaData()
-        //{
-        //    EventDetailLambdaData.InvokeAsync(ValueFromLambdaDataDetail);
-        //}
-
         protected override async Task OnParametersSetAsync()
         {
             await GetLambdaData();
