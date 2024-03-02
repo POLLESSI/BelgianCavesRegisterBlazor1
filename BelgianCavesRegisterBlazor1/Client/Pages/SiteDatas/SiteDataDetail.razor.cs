@@ -7,11 +7,10 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.SiteDatas
     public partial class SiteDataDetail
     {
         [Inject]
-        public HttpClient? Client { get; set; }
+        public HttpClient Client { get; set; }
         public SiteDataModel? CurrentSiteData { get; set; }
         [Parameter]
         public int SiteData_Id { get; set; }
-
         protected override async Task OnParametersSetAsync()
         {
             await GetSiteData();

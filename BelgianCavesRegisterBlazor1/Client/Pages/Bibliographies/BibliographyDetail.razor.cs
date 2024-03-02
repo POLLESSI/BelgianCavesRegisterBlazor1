@@ -8,7 +8,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.Bibliographies
     {
         [Inject]
         public HttpClient Client { get; set; }
-        public BibliographyModel CurrentBibliography { get; set; }
+        public BibliographyModel? CurrentBibliography { get; set; }
         [Parameter]
         public int Bibliography_Id { get; set; }
         protected override async Task OnParametersSetAsync()

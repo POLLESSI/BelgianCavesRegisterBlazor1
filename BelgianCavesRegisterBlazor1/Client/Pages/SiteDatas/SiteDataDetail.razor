@@ -1,9 +1,10 @@
-﻿@page "/sitedatas/sitedatadetail"
+﻿@page "/sitedatas/sitedatadetail/{site_id:int}"
 @using BelgianCavesRegisterBlazor1.Client.Models
+@inject NavigationManager NavigationManager
 
 <h3>Site Datas Details</h3>
 
-<EditForm Model="CurrentSiteData" OnSubmit="GetSiteData" class="form-control">
+<EditForm Model="CurrentSiteData" @OnSubmit="GetSiteData" class="form-control">
     <div class="form-control-sm">
         <label>Id Site : </label>
         <InputNumber @bind-Value="CurrentSiteData.Site_Id"></InputNumber>

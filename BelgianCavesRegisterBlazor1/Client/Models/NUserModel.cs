@@ -6,15 +6,15 @@ namespace BelgianCavesRegisterBlazor1.Client.Models
 {
     public class NUserModel
     {
-        public int NUser_Id { get; set; }
+        public Guid NUser_Id { get; set; }
         [Required]
         [MaxLength(64)]
         [DisplayName("Nickname ? ")]
-        public string? Nickname { get; set; }
+        public string? Pseudo { get; set; }
         [Required]
         [MaxLength(64)]
         [DisplayName("Password ? ")]
-        public byte Pwd { get; set; }
+        public byte PasswordHash { get; set; }
         [Required]
         [DisplayName("Security Stamp ? ")]
         public Guid SecurityStamp { get; set; }

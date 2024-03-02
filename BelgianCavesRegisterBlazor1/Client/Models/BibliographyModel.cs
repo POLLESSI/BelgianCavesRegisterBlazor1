@@ -10,7 +10,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Models
         [Required]
         public string? Author { get; set; }
         [Required]
-        public int ISBN { get; set; }
+        public string? ISBN { get; set; }
         [Required]
         public string? DataType { get; set; }
         [Required]

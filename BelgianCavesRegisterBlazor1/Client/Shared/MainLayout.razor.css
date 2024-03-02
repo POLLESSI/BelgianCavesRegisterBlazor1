@@ -1,13 +1,15 @@
-﻿.page {
+﻿ .page {
     position: relative;
     left: 20%;
     display: flex;
     flex-direction: row; 
     background-image: url();
+    background-color: lightyellow;
 }
 
 h3 {
     color: orangered;
+    background-color: lightseagreen;
     position: absolute;
     top: auto;
     bottom: auto;
@@ -17,6 +19,12 @@ h3 {
 
 main {
     flex: 1;
+    background-color: aqua;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 20%;
+    right: auto;
 }
 
 .sidebar {
@@ -26,10 +34,10 @@ main {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
+    top: 100px;
+    bottom: 2000px;
+    left: 50%;
+    right: 30%;
 }
 
 .top-row {
@@ -42,7 +50,7 @@ main {
     position: absolute;
     top: auto;
     bottom: auto;
-    left: auto;
+    left: 20%;
     right: auto;
 }
 
@@ -54,21 +62,36 @@ main {
 
     .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
         text-decoration: underline;
+        background-color: chartreuse;
     }
 
     .top-row ::deep a:first-child {
         overflow: hidden;
         text-overflow: ellipsis;
     }
-
     @media (max-width: 640.98px) {
+        .top-row:not(.auth) {
+            display: none;
+        }
+        .top-row.auth {
+            justify-content: space-between;
+            background-color: lightsalmon;
+        }
+        .top-row ::deep a, .top-row ::deep .btn-link {
+            margin-left: 0;
+            background-color: forestgreen;
+        }
+    }
+
+    @media (min-width: 641px) {
         .page {
             flex-direction: row;
-            position: absolute;
+            background-color: darkorchid;
+            /*position: absolute;
             top: auto;
             bottom: auto;
             left: auto;
-            right: auto;
+            right: auto;*/
         }
 
         .sidebar {
@@ -76,33 +99,33 @@ main {
             height: 100vh;
             position: sticky;
             top: 0;
-            position: absolute;
+            /*position: absolute;
             top: auto;
             bottom: auto;
             left: auto;
-            right: auto;
+            right: auto;*/
         }
 
         .top-row {
             position: sticky;
             top: 0;
             z-index: 1;
-            position: absolute;
+            /*position: absolute;
             top: auto;
             bottom: auto;
             left: auto;
-            right: auto;
+            right: auto;*/
         }
 
             .top-row.auth ::deep a:first-child {
                 flex: 1;
                 text-align: right;
                 width: 0;
-                position: relative;
+                /*position: relative;
                 top: auto;
                 bottom: auto;
                 left: auto;
-                right: auto;
+                right: auto;*/
             }
 
         .top-row, article {

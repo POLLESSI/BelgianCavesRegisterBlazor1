@@ -13,7 +13,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages
         protected override async Task OnInitializedAsync()
         {
             ListeMessages = new List<Message>();
-            hubConnection = new HubConnectionBuilder().WithUrl(new Uri("https://localhost:7017/chat")).Build();
+            hubConnection = new HubConnectionBuilder().WithUrl(new Uri("https://localhost:7044/chat")).Build();
 
             await hubConnection.StartAsync();
             hubConnection.On("receiveMessage",

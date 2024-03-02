@@ -11,11 +11,11 @@ namespace BelgianCavesRegisterBlazor1.Client.Models
         [MaxLength(32)]
         [DisplayName("Lastname")]
 
-        public string Lastname { get; set; }
+        public string? Lastname { get; set; }
         [Required]
         [MinLength(3), MaxLength(32)]
         [DisplayName("Firstname")]
-        public string Firstname { get; set; }
+        public string? Firstname { get; set; }
         [Required]
         [DisplayName("Birth Date")]
         public DateTime? BirthDate { get; set; }
@@ -39,17 +39,17 @@ namespace BelgianCavesRegisterBlazor1.Client.Models
         [Required]
         [MinLength(2), MaxLength(64)]
         [DisplayName("City")]
-        public string Address_City { get; set; }
+        public string? Address_City { get; set; }
         [Required]
         [MinLength(3), MaxLength(64)]
         [DisplayName("Country")]
-        public string Address_Country { get; set;}
-        public int Gsm { get; set; }
+        public string? Address_Country { get; set;}
         [MaxLength(16)]
         [DisplayName("Telephone")]
         public int Telephone { get; set; }
         [MaxLength(16)]
         [DisplayName("Gsm")]
+        public int Gsm { get; set; }
         public bool Active { get; } = true;
     }
 }

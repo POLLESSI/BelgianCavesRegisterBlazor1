@@ -1,0 +1,59 @@
+﻿@page "/npersons/npersonregister"
+@using Microsoft.AspNetCore.Components.Forms
+@inject NavigationManager NavigationManager
+
+<h2>New Person Register</h2>
+
+<h3> Can you please enter this additional data ? </h3>
+
+<EditForm Model="npersonregisterform" @OnSubmit="submit" class="form-control">
+    <div class="form-control-sm">
+        <label>Last Name : </label>
+        <InputText @bind-Value="npersonregisterform.Lastname"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>First Name : </label>
+        <InputText @bind-Value="npersonregisterform.Firstname"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Birth Date : </label>
+        <InputDate @bind-Value="npersonregisterform.BirthDate"></InputDate>
+    </div>
+    <div class="form-control-sm">
+        <label>Email : </label>
+        <InputText @bind-Value="npersonregisterform.Email"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Street : </label>
+        <InputText @bind-Value="npersonregisterform.Address_Street"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Number : </label>
+        <InputNumber @bind-Value="npersonregisterform.Address_Nbr"></InputNumber>
+    </div>
+    <div class="form-control-sm">
+        <label>Postal Code : </label>
+        <InputNumber @bind-Value="npersonregisterform.PostalCode"></InputNumber>
+    </div>
+    <div class="form-control-sm">
+        <label>City : </label>
+        <InputText @bind-Value="npersonregisterform.Address_City"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Country : </label>
+        <InputText @bind-Value="npersonregisterform.Address_Country"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Telephone : </label>
+        <InputNumber @bind-Value="npersonregisterform.Telephone"></InputNumber>
+    </div>
+    <div class="form-control-sm">
+        <label>Gsm : </label>
+        <InputNumber @bind-Value="npersonregisterform.Gsm"></InputNumber>
+    </div>
+    
+</EditForm>
+
+@code {
+
+}

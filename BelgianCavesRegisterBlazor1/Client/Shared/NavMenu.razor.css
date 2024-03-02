@@ -3,19 +3,32 @@
     box-shadow: inherit;
     text-shadow: inherit;
     position: absolute;
-    top: auto;
+    top: 0px;
     bottom: auto;
-    left: auto;
+    left: 10px;
     right: auto;
 }
 
-.flex-column {
+nav {
     display: flex;
+    background-color: chocolate;
     position: absolute;
-    top: 200px;
-    bottom: 400px
-    right: 0%;
-    left: 20%;
+    top: 300px;
+    bottom: 5000px;
+    left: 7px;
+    right: auto;
+    background-color: blue;
+}
+
+.flex-column {
+    background-color: blueviolet;
+    display: flex;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: 0px;
+    margin-left: 0%;
 }
 
 .top-row {
@@ -24,9 +37,9 @@
     text-shadow: inherit;
     box-shadow: inherit;
     position: absolute;
-    top: auto;
+    top: 50px;
     bottom: auto;
-    left: auto;
+    left: 100px;
     right: auto;
 }
 
@@ -36,22 +49,48 @@
     text-shadow: inherit;
     box-shadow: inherit;
     position: absolute;
-    top: auto;
-    bottom: auto;
-    left: auto;
+    top: 150px;
+    bottom: 2000px;
+    left: 100px;
     right: auto;
+    /*margin-left: auto;*/
 }
 .container-fluid {
     background-color: orange;
-    background-position: left;
-    max-width: 25%;
+    background-position: top;
+    max-width: 30%;
     text-align: left;
     position: absolute;
     top: auto;
     bottom: auto;
-    left: auto;
+    left: 100px;
     right: auto;
 }
+    .container-fluid a {
+        background-color: orange;
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: 100px;
+        right: auto;
+    }
+
+    .container-fluid button {
+        position: absolute;
+        top: auto;
+        bottom: auto;
+        left: 100px;
+        right: auto;
+    }
+
+        .container-fluid button span {
+            background-color: yellow;
+            position: absolute;
+            top: auto;
+            bottom: auto;
+            left: 100px;
+            right: auto;
+        }
 
 .oi {
     width: 2rem;
@@ -61,35 +100,36 @@
     text-shadow: inherit;
     box-shadow: inherit;
     position: absolute;
-    top: auto;
+    top: 75px;
     bottom: auto;
-    left: auto;
+    left: 100px;
     right: auto;
 }
 
 .nav-item {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+    padding-bottom: 1.5rem;
+    background-color: orangered;
     color: orange;
-    max-width: 10%;
     text-shadow: inherit;
     box-shadow: inherit;
-    max-width: 25%;
-    position: absolute;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
+    max-width: 22%;
+    position: relative;
+    top: 10px;
+    bottom: 100px;
+    left: 25px;
+    right: 20%;
+    padding: 10px;
 }
     .nav-item:first-of-type {
-        padding-top: 1rem;
+        padding-top: 1.3rem;
         text-shadow: inherit;
         box-shadow: inherit;
         position: relative;
-        top: auto;
-        bottom: auto;
-        left: auto;
-        right: auto;
+        top: 30px;
+        bottom: 10px;
+        left: 25px;
+        right: 20%;
     }
 
     .nav-item:last-of-type {
@@ -97,10 +137,10 @@
         text-shadow: inherit;
         box-shadow: inherit;
         position: relative;
-        top: auto;
-        bottom: auto;
-        left: auto;
-        right: auto;
+        top: 10px;
+        bottom: 1500px;
+        left: 25px;
+        right: 20%;
     }
 
     .nav-item ::deep a {
@@ -110,14 +150,13 @@
         display: flex;
         align-items: center;
         line-height: 3rem;
-        text-shadow: inherit;
-        box-shadow: inherit;
+        /*text-shadow: inherit;
+        box-shadow: inherit;*/
     }
 
 .nav-item ::deep a.active {
     background-color: rgba(255, 255, 255, 0.25);
-    color: white;
-    /*min-width: 20%;*/
+    color: rgb(201, 112, 28);
     max-width: 30%;
     text-shadow: inherit;
     box-shadow: inherit;
@@ -125,32 +164,33 @@
 
 .nav-item ::deep a:hover {
     background-color: darkblue;
-    color: white;
+    color: lightgoldenrodyellow;
     text-shadow: inherit;
     box-shadow: inherit;
+    width: 200px;
 }
  
 @media (min-width: 641px){
     .navbar-toggler {
         display: none;
-        text-shadow: inherit;
+        /*text-shadow: inherit;
         box-shadow: inherit;
         position: absolute;
         top: auto;
         bottom: auto;
         left: auto;
-        right: auto;
+        right: auto;*/
     }
 
     .collapse {
         /* Never collapse the sidebar for wide screens */
         display: block;
-        text-shadow: inherit;
+        /*text-shadow: inherit;
         box-shadow: inherit;
         position: absolute;
         top: auto;
         bottom: auto;
         left: auto;
-        right: auto;
+        right: auto;*/
     }
 }

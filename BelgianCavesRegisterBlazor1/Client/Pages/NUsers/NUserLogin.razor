@@ -1,0 +1,23 @@
+﻿@page "/nusers/nuserlogin"
+@using Microsoft.AspNetCore.Components.Forms
+@inject NavigationManager NavigationManager
+
+<h3>User Login</h3>
+
+<EditForm Model="nuserloginform" @OnSubmit="submit" class="form-control">
+    <div class="form-control-sm">
+        <label>Email : </label>
+        <InputText @bind-Value="nuserloginform.Email"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Password : </label>
+        <InputNumber @bind-Value="nuserloginform.PasswordHash"></InputNumber>
+    </div>
+    <div>
+        <button type="submit" button="btn btn-success">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+
+}

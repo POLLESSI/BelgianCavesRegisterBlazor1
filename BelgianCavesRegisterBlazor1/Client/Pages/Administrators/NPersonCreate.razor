@@ -1,0 +1,56 @@
+﻿@page "/administrators/npersoncreate"
+@using Microsoft.AspNetCore.Components.Forms
+@inject NavigationManager NavigationManager
+
+<h3>New Person Creating</h3>
+
+<EditForm Model="npersonform" OnSubmit="submit" class="form-control">
+        <div class="form-control-sm">
+            <label>Lastname : </label>
+            <InputText @bind-Value="npersonform.Lastname"></InputText>
+        </div>
+        <div class="form-control-sm">
+            <label>Firstname : </label>
+            <InputText @bind-Value="npersonform.Firstname"></InputText>
+        </div>
+        <div class="form-control-sm">
+            <label>BirthDate : </label>
+            <InputDate @bind-Value="npersonform.BirthDate"></InputDate>
+        </div>
+    <div class="form-control-sm">
+        <label>Email : </label>
+        <InputText @bind-Value="npersonform.Email"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Street : </label>
+        <InputText @bind-Value="npersonform.Address_Street"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>N° : </label>
+        <InputNumber @bind-Value="npersonform.Address_Nbr"></InputNumber>
+    </div>
+    <div class="form-control-sm">
+        <label>Postal Code : </label>
+        <InputNumber @bind-Value="npersonform.PostalCode"></InputNumber>
+    </div>
+    <div class="form-control-sm">
+        <label>City : </label>
+        <InputText @bind-Value="npersonform.Address_City"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Country : </label>
+        <InputText @bind-Value="npersonform.Address_Country"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Gsm : </label>
+        <InputNumber @bind-Value="npersonform.Gsm"></InputNumber>
+    </div>
+    <div class="form-control-sm">
+        <label>Telephone : </label>
+        <InputNumber @bind-Value="npersonform.Telephone"></InputNumber>
+    </div>
+</EditForm>
+
+@code {
+
+}

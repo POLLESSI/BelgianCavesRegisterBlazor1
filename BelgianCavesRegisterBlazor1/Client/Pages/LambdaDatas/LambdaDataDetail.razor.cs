@@ -1,6 +1,7 @@
 ﻿using BelgianCavesRegisterBlazor1.Client.Models;
 using Microsoft.AspNetCore.Components;
 using Newtonsoft.Json;
+using System.Reflection.Metadata;
 
 namespace BelgianCavesRegisterBlazor1.Client.Pages.LambdaDatas
 {
@@ -10,7 +11,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Pages.LambdaDatas
 
         public HttpClient Client { get; set; }
 
-        public LambdaDataModel CurrentLambdaData { get; set; }
+        public LambdaDataModel? CurrentLambdaData { get; set; }
         [Parameter]
         public int LambdaData_Id { get; set; }
 

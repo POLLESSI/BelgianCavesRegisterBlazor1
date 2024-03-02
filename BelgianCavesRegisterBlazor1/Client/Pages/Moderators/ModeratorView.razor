@@ -1,0 +1,35 @@
+﻿@page "/moderators/moderatorview"
+@using BelgianCavesRegisterBlazor1.Client.Models
+@inject NavigationManager NavigationManager
+
+<h3>Moderators View</h3>
+
+<table class="table table-striped table-bordered"> 
+    <tr>
+        <th>Id User : </th>
+        <th></th>
+    </tr>
+    @foreach(ModeratorModel mm in ModeratorList)
+    {
+        <tr>
+            <td>@mm.NUser_Id</td>
+            <td><button class="btn btn-sm btn-outline-primary" @onclick="() => ClickInfo(mm.Moderator_Id)"></button>Info</td>
+        </tr>
+    }
+</table>
+
+<hr />
+<hr />
+
+@if(SelectedId > 0)
+{
+    <ModeratorDetail id="SelectedId"></ModeratorDetail>
+}
+
+<hr />
+<hr />
+<hr />
+
+@code {
+
+}

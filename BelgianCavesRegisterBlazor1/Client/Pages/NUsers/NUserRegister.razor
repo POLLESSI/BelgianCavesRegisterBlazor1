@@ -1,0 +1,31 @@
+﻿@page "/nusers/nuserregister"
+@using Microsoft.AspNetCore.Components.Forms
+@inject NavigationManager NavigationManager
+
+<h3>New User Register</h3>
+
+<EditForm Model="nuserregisterform" @OnSubmit="submit" class="form-control">
+    <div class="form-control-sm">
+        <label>Nick Name : </label>
+        <InputText @bind-Value="nuserregisterform.Pseudo"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Email : </label>
+        <InputText @bind-Value="nuserregisterform.Email"></InputText>
+    </div>
+    <div class="form-control-sm">
+        <label>Password : </label>
+        <InputNumber @bind-Value="nuserregisterform.PasswordHash"></InputNumber>
+    </div>
+    <div class="form-control-sm">
+        <label>Second Password : </label>
+        <InputText @bind-Value="nuserregisterform.SecondPassword"></InputText>
+    </div>
+    <div>
+        <button type="submit" button="btn btn-success" >Submit</button>
+    </div>
+</EditForm>
+    <a href="@nPersonRegisterPageLink">Go tu user registration page</a>
+@code {
+
+}

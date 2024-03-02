@@ -7,12 +7,17 @@ namespace BelgianCavesRegisterBlazor1.Client.Models
     {
         [Required]
         [EmailAddress]
-        [DisplayName("Email")]
+        [DisplayName("Email :")]
         public string Email { get; set; }
         [Required]
-        public string Pwd { get; set; }
+        [MinLength(8)]
+        [MaxLength(64)]
+        [DisplayName("Password : ")]
+        public string PasswordHash { get; set; }
         [Required]
         [MinLength(10)]
+        [MaxLength(128)]
+        [DisplayName("Secret Message : ")]
         public string SecretMessage { get; set; }
     }
 }

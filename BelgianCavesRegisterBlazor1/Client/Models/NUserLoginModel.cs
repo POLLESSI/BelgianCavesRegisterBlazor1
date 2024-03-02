@@ -10,7 +10,7 @@ namespace BelgianCavesRegisterBlazor1.Client.Models
         [DisplayName("Email ? ")]
         public string? Email { get; set; }
         [Required]
-        public Byte Pwd { get; set; }
+        public Byte PasswordHash { get; set; }
         public bool Active { get; } = true;
     }
 }

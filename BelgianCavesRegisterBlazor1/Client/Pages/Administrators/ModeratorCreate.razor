@@ -1,0 +1,19 @@
+﻿@page "/administrators/moderatorcreate"
+@using Microsoft.AspNetCore.Components.Forms
+@inject NavigationManager NavigationManager
+
+<h3>Create New Moderator</h3>
+
+<EditForm Model="moderatorform" @OnSubmit="submit" class="form-control">
+    <div class="form-control-sm">
+        <label>Id User : </label>
+        <InputNumber @bind-Value="moderatorform".NUser_Id></InputNumber>
+    </div>
+    <div>
+        <button type="submit" button="btn btn-success">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+
+}

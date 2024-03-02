@@ -9,8 +9,8 @@
         public double Longitude { get; set; }
         public decimal Length { get; set; }
         public decimal Depth { get; set; }
-        public string AccessRequirement { get; set; }
-        public string PracticalInformation { get; set; }
+        public string? AccessRequirement { get; set; }
+        public string? PracticalInformation { get; set; }
         public int LambdaData_Id { get; set; }
         public int NOwner_Id { get; set; }
         public int ScientificData_Id { get; set; }
